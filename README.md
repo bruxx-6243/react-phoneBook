@@ -2,9 +2,9 @@
 
 ![react PhoneBook screenShot](./public/screely-1708687385565.png)
 
-React PhoneBook is a simple todo app in where you can save user by adding the first name, last name and phone number.
+React PhoneBook is a simple todo app in where you can save contacts by adding the first name, last name and phone number.
 
-Tjis application is a good exemple for beginners because it illustrates how the `useState and useEffect` work in React.
+This app is good exemple for beginners because it illustrates how the `useState and useEffect` hooks work in React.
 
 All the contacts are stored inside the `localStorage`.
 
