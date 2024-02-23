@@ -1,6 +1,8 @@
-import type { ContactProps } from "@/types";
+import { useContactStore } from "@/store/useContactStore";
 
-export const PhoneBookTable = ({ contacts }: { contacts: ContactProps[] }) => {
+export const PhoneBookTable = () => {
+  const contacts = useContactStore((state) => state.contacts);
+
   return (
     <table className="w-full">
       <thead className="text-darkColor border border-slateColor sticky top-0">

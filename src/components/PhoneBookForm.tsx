@@ -26,7 +26,7 @@ export const PhoneBookForm: React.FC<PhoneBookFormProps> = ({
 
   useEffect(() => {
     setFocus("firstName");
-  });
+  }, [setFocus]);
 
   const onSubmit: SubmitHandler<FormSchema> = async (data) => {
     await wait(3000);
