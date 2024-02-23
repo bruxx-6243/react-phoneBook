@@ -11,7 +11,7 @@ type Actions = {
 
 export const useContactStore = create<State & Actions>((set) => ({
   contacts: [],
-  addContact: ({ contact }) => {
+  addContact: ({ contact }: { contact: ContactProps }) => {
     set((state) => ({
       contacts: [...state.contacts, contact].sort((a, b) =>
         a.lastName.localeCompare(b.lastName)

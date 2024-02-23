@@ -16,7 +16,7 @@ export const PhoneBookTable = () => {
         {contacts.map((contact, index) => (
           <tr
             key={contact.phoneNumber}
-            className={`border border-slateColor cursor-pointer ${
+            className={`border border-slateColor ${
               index % 2 !== 0 && "bg-slate-800"
             }`}>
             <td>{contact.firstName}</td>

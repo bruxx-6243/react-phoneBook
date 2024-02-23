@@ -12,6 +12,9 @@ function HomePage() {
     const storedContacts = localStorage.getItem("contacts");
     if (storedContacts) {
       const parsedContacts: ContactProps[] = JSON.parse(storedContacts);
+
+      useContactStore.setState({ contacts: [] });
+
       parsedContacts.forEach((contact) => {
         addContact({ contact });
       });
