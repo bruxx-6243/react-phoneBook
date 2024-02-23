@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-dark: hsl(0, 0%, 5%);
+    --clr-slate: hsl(36, 100%, 90%);
+    --clr-orange: hsl(11, 100%, 60%);
+
+    --res-fnt-size: clamp(2rem, 1.5rem + 2.5vw, 3.75rem);
+  }
+
+  body {
+    @apply bg-darkColor text-slateColor;
+  }
+
+  input {
+    @apply bg-inherit border-none outline outline-1 outline-gray-400 text-slateColor rounded-md w-full p-2.5 focus-visible:outline-2 focus-visible:outline-slateColor placeholder:text-sm aria-[invalid="true"]:outline-red-500 aria-[invalid="true"]:outline-2;
+  }
+
+  label {
+    @apply block text-sm font-medium text-slateColor cursor-pointer;
+  }
+}
