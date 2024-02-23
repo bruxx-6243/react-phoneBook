@@ -87,7 +87,7 @@ export const PhoneBookForm: React.FC<PhoneBookFormProps> = ({
       </div>
       <button
         type="submit"
-        className="bg-slateColor w-full text-darkColor px-4 py-2 rounded font-semibold disabled:bg-slate-400"
+        className="bg-slateColor w-full text-darkColor px-4 py-2 rounded font-semibold disabled:bg-amber-100/50 disabled:cursor-not-allowed"
         disabled={!isDirty || isSubmitting}>
         {isSubmitting ? "Submitting..." : "Submit"}
       </button>

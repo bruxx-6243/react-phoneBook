@@ -4,9 +4,9 @@ export const PhoneBookTable = () => {
   const contacts = useContactStore((state) => state.contacts);
 
   return (
-    <table className="w-full">
+    <table className="w-full overflow-x-auto">
       <thead className="text-darkColor border border-slateColor sticky top-0">
-        <tr className="bg-slateColor ">
+        <tr className="bg-slateColor divide-x-2 divide-darkColor">
           <th>First Name</th>
           <th>Last Name</th>
           <th>Phone Number</th>
