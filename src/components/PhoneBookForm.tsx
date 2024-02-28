@@ -37,7 +37,7 @@ export const PhoneBookForm: React.FC<PhoneBookFormProps> = ({
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-md mx-auto space-y-4">
+      className="w-full md:max-w-md mx-auto space-y-4">
       <div className="flex flex-col space-y-2">
         <label htmlFor="firstName">First Name</label>
         <input
