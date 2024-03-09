@@ -1,8 +1,11 @@
+import { useEffect } from "react";
+
 import { PhoneBookForm } from "@/components/PhoneBookForm";
 import { PhoneBookTable } from "@/components/PhoneBookTable";
 import { useContactStore } from "@/store/useContactStore";
+
 import type { ContactProps } from "@/types";
-import { useEffect } from "react";
+
 
 function HomePage() {
   const contacts = useContactStore((state) => state.contacts);
